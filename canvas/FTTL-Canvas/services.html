@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron%7cRaleway" rel="stylesheet">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+        <title>Services : Fly to the Limit; New Zealand's greatest flight experience</title>
+        <script src="fabric.js-1.7.1/dist/fabric.js"></script>
+
+    </head>
+    <body>
+
+        <header id="header">
+            <img src="img/Hamburger_Icon.png" id="header__hamburger" onclick='showNav()' alt='menu icon'/>
+            <a href="index.html" class="header__title">FLY TO THE LIMIT</a>
+            <nav class="hamburger_menu hide">
+                <a href='services.html' class="navbar__button">Services</a>
+                <a href='gallery.html' class="navbar__button">Gallery</a>
+                <a href='contact.html' class="navbar__button">Contact</a>
+                <a href="staff_and_aircraft.html" class="navbar__button">Staff & Aircraft</a>
+            </nav>
+        </header>
+        <nav class="navbar">
+            <a href="services.html" class="navbar__button">Services</a>
+            <a href='gallery.html' class="navbar__button">Gallery</a>
+            <a href='contact.html' class="navbar__button">Contact</a>
+            <a href="staff_and_aircraft.html" class="navbar__button">Staff & Aircraft</a>
+        </nav>
+
+        <h1>Flight Experiences</h1>
+        <div class="canvas_container">
+            <canvas id="c" width="1200" height="200">
+
+                <img class="info_box__img" src="img/icons/Glider_Icon.png" id="glider">
+                <img class="info_box__img" src="img/Icons/Heli_Icon.png" alt="helicopter icon" id="heli"/>
+                <img class="info_box__img" src="img/Icons/Stunt_Plane.png" alt="'stunt plane_icon" id="stunt"/>
+                <img class="info_box__img" src="img/Icons/plane_icon.png" alt="heli icon" id="plane"/>
+
+
+            </canvas>
+        </div>
+
+        <script>
+            //            var canvas = new fabric.Canvas('c');
+            //            var imgElement = document.getElementById('my-image');
+            //            var imgInstance = new fabric.Image(imgElement, {
+            //                left: 100,
+            //                top: 100,
+            ////                angle: 30,
+            //                opacity: 0.85
+            //            });
+            //            canvas.add(imgInstance);
+        </script>
+        <!--        <section id="services">
+                    <div class="info_box" id="helicopter">
+                        <img class="info_box__img" src="img/Icons/Heli_Icon.png" alt="helicopter icon"/>
+                        <h3>Helicopter Tours</h3>
+                        <p class="services__p">
+                            Our helicopter tours are your best opportunity to get up close and personal with some of New Zealand's
+                            most stunning scenery from the air; Hover over stunning alpine settings such as the Remarkables,
+                            see glaciers up close, even see the fabled Milford Sound from a whole angle. These are merely a few of the
+                            unique experiences in store for you on one of our heli tours. <br>Priced from $450 per person per hour.
+                        </p>
+                        <a href="booking.html" class="action__button">Book Now</a>
+                    </div>
+                    <div class="info_box" id="glider">
+                        <img class="info_box__img" src="img/Icons/Glider_Icon.png" alt="'glider icon"/>
+                        <h3>Glider Flights</h3>
+                        <p class="services__p">
+                            Our glider flights are an unique opportunity for you to get behind the controls and experience the tranquil
+                            wonders of flying for yourself in a completely controlled situation.
+                            With some of the most stunning mountains and lakes in the world as your backdrop this is a truly awesome
+                            experience
+                            you will never forget.<br>
+                            Priced from $1200 per hour.
+        
+                        </p>
+                        <a href="booking.html" class="action__button">Book Now</a>
+                    </div>
+                    <div class="info_box" id="stunt">
+                        <img class="info_box__img" src="img/Icons/Stunt_Plane.png" alt="'stunt plane_icon"/>
+                        <h3>Stunt Plane Rides</h3>
+                        <p class="services__p">
+                            Looking for a high octane flight experience?
+                            Our stunt flights will get the adrenaline pumping like nothing else. Our highly trained stunt pilot
+                            will take you right up close and personal with rocky cliff faces and will barrel roll and loop de loop until
+                            your
+                            hearts content. A scenic experience with a high octane twist.<br>
+                            Priced from $700 per person per hour.
+                        </p>
+                        <a href="booking.html" class="action__button">Book Now</a>
+                    </div>
+                    <div class="info_box" id="plane">
+                        <img class="info_box__img" src="img/Icons/plane_icon.png" alt="plane_icon"/>
+                        <h3>Plane Tours</h3>
+                        <p class="services__p">
+                            For those looking for a more traditional flight experience, our fixed wing plane tours are the best value
+                            for money
+                            available with the widest variety of terrain covered out of all our flights. We have an amphibian aircraft
+                            that
+                            can take you on a fully catered alpine lake tour, a mountain tour that will showcase the best parts of the
+                            southern alps
+                            (including the breathtaking mt cook at sunset) and we even do custom photography flights by arrangement.<br>
+                            Priced from $350 per person per hour.
+                        </p>
+                        <a href="booking.html" class="action__button">Book Now</a>
+                    </div>
+                    <div class="info_box" id="charter">
+                        <img class="info_box__img" src="img/Icons/plane_icon.png" alt ='plane_icon'/>
+                        <h3>Charter Flights</h3>
+                        <p class="services__p">
+                            We offer charter flights if required, and are prepared to put our full fleet at your disposal whether your
+                            needs be commercial or private. Contact us for more information. </p>
+                        <a href="booking.html" class="action__button">Book Now</a>
+        
+                    </div>
+                    <div class="info_box" id="tramp">
+                        <img class="info_box__img" src="img/Icons/Heli_Icon.png" alt="heli icon"/>
+                        <h3>Tramping Services</h3>
+                        <p class="services__p">
+                            We offer a full pick up and drop off service for trampers and we even offer a provisioning service for
+                            those on longer excursions. Here at Fly To The Limit trampers are our specialty.<br>
+                            Contact us for more information.
+                        </p>
+                        <a href="booking.html" class="action__button">Book Now</a>
+                    </div>
+                </section>
+                <section>
+                    <div class="sitemap">
+                        <h3>FLY TO THE LIMIT</h3>
+                        <h3>Phone: 0800 123 456</h3>
+                        <h3> Email: fttl@gmail.com</h3>
+                        <nav class="navbar">
+                            <a href="services.html" class="navbar__button">Services</a>
+                            <a href='gallery.html' class="navbar__button">Gallery</a>
+                            <a href='contact.html' class="navbar__button">Contact</a>
+                            <a href="staff_and_aircraft.html" class="navbar__button">Staff & Aircraft</a>
+                        </nav>
+        
+                    </div>
+        
+                </section>
+        -->
+
+
+
+        <script src="main.js"></script>
+
+        <script>
+            var canvas = new fabric.Canvas('c');
+            var imgList = document.getElementsByClassName('info_box__img');
+            //            console.log(imgList);
+
+            
+            function addImgToCanvas(imgList) {
+                //                var gliderImg = document.getElementById('glider');
+                //                var heliImg = document.getElementById('heli');
+                //                var stuntImg = document.getElementById('stunt');
+                //                var planeImg = document.getElementById('plane');
+                for (i = 0; i < imgList.length; i++) {
+                    var imgInstance = new fabric.Image(imgList[i], {
+                        left: (100 + (i * 200)),
+                        top: 0
+                    });
+                    canvas.add(imgInstance);
+                }
+            }
+            function addListeners(imgList) {
+            }
+
+            addImgToCanvas(imgList);
+        </script>
+    </body>
+</html>
