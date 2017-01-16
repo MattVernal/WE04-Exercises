@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #map1 {
+                height: 400px;
+                width: 100%;
+            }
+            #map2 {
+                height: 400px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Markers</h3>
+        <div id="map1"></div>
+        <script>
+            //Initialise map
+            function initMap() {
+                //create markers
+                var yoobee = {lat: -43.520653, lng: 172.567866};
+                var home = {lat: -43.477848, lng: 172.595243};
+                //Specify div for map container
+                var map1 = new google.maps.Map(document.getElementById('map1'), {
+                    zoom: 10,
+                    center: yoobee
+                });
+                //Place markers
+                var yoobeeMarker = new google.maps.Marker({
+                    position: yoobee,
+                    map: map1
+                });
+                var homeMarker = new google.maps.Marker({
+                    position: home,
+                    map: map1
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-mfaSXKo-3pEGEXQ375-AGQXTKOXuRHM&callback=initMap">
+        </script>
+
+    </body>
+</html>
+
